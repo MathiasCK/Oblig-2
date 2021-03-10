@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Bestilling Av Kinobiletter</h1>
+    </div>
+    <form class="container">
+      <div class="row">
+        <h3>Velg film</h3>
+        <div>
+          <div class="relative">
+            <select id="movie" required>
+              <option value="" disabled selected>Velg Film</option>
+              <option value="movie 1">Movie 1</option>
+              <option value="movie 2">Movie 2</option>
+              <option value="movie 3">Movie 3</option>
+              <option value="movie 4">Movie 4</option>
+              <option value="movie 5">Movie 5</option>
+            </select>
+            <div class="border"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <h3>Antall</h3>
+        <div>
+          <div class="relative">
+            <input id="num" class="small" required />
+            <div class="border"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <h3>Fornavn</h3>
+        <div>
+          <div class="relative">
+            <input
+              id="fName"
+              type="name"
+              placeholder="Skriv inn navn *"
+              required
+            />
+            <div class="border"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <h3>Etternavn</h3>
+        <div>
+          <div class="relative">
+            <input
+              id="lName"
+              type="name"
+              placeholder="Skriv inn navn *"
+              required
+            />
+            <div class="border"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <h3>Telefonnr</h3>
+        <div>
+          <div class="relative">
+            <input
+              id="tel"
+              type="tel"
+              placeholder="Skriv inn Telefonnr *"
+              required
+            />
+            <div class="border"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <h3>Epost</h3>
+        <div>
+          <div class="relative">
+            <input
+              id="mail"
+              type="email"
+              placeholder="Skriv inn Epost *"
+              required
+            />
+            <div class="border"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <button type="submit" id="buy">Kjøp biletter</button>
+      </div>
+      <div class="row">
+        <h3 id="output"></h3>
+      </div>
+      <div class="row">
+        <button type="reset" id="delete">Slett alle biletter</button>
+      </div>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #282828;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2rem;
+  color: white;
+  padding: 3rem;
+}
+
+h3 {
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.relative {
+  position: relative;
+  width: 100%;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem;
+}
+
+.row select {
+  padding: 1rem;
+  width: 300px;
+  outline: none;
+}
+
+.row select ~ .border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #23d997;
+}
+
+.row select:hover ~ .border {
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.row input {
+  padding: 1rem;
+  width: 300px;
+  outline: none;
+}
+
+.row input.small {
+  width: 50px;
+}
+
+.row input ~ .border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #23d997;
+}
+
+.row input:hover ~ .border {
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.row button {
+  padding: 1rem;
+  margin: 0rem 1rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  color: white;
+  background: #23d997;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+
+.row button:hover {
+  border: 1px solid #23d997;
+  background: transparent;
+}
+/*# sourceMappingURL=styles.css.map */
