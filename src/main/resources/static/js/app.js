@@ -44,7 +44,7 @@ const formatData = (customers) => {
       <p>Fornavn: ${customer.fName}<p/>
       <p>Etternavn: ${customer.lName}<p/>
       <p>Telefon: ${customer.tel}<p/>
-      <p>Mail: ${customer.mail}<p />
+      <p>Mail: ${customer.mail}<p/>
     </div>
     `;
   }
