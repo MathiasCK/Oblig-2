@@ -38,6 +38,7 @@ h3 {
     padding: 1rem;
     width: 400px;
     outline: none;
+    cursor: pointer;
     & ~ .border {
       border: none !important;
       position: absolute;
