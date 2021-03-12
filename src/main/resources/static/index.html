@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
     />
   </head>
   <body>
@@ -19,10 +20,8 @@
     </div>
     <form class="container">
       <div class="row">
-        <div class="col-md-6">
-          <h3>Velg film</h3>
-        </div>
-        <div class="col-md-6">
+        <h3>Velg film</h3>
+        <div>
           <div class="relative">
             <select id="movie" required>
               <option value="" disabled selected>Velg Film</option>
@@ -37,21 +36,17 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6">
-          <h3>Antall</h3>
-        </div>
-        <div class="col-md-6">
+        <h3>Antall</h3>
+        <div>
           <div class="relative">
-            <input id="num" class="small" required />
+            <input type="number" id="num" min="0" class="small" required />
             <div class="border"></div>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6">
-          <h3>Fornavn</h3>
-        </div>
-        <div class="col-md-6">
+        <h3>Fornavn</h3>
+        <div>
           <div class="relative">
             <input
               id="fName"
@@ -64,10 +59,8 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6">
-          <h3>Etternavn</h3>
-        </div>
-        <div class="col-md-6">
+        <h3>Etternavn</h3>
+        <div>
           <div class="relative">
             <input
               id="lName"
@@ -80,10 +73,8 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6">
-          <h3>Telefonnr</h3>
-        </div>
-        <div class="col-md-6">
+        <h3>Telefonnr</h3>
+        <div>
           <div class="relative">
             <input
               id="tel"
@@ -96,10 +87,8 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6">
-          <h3>Epost</h3>
-        </div>
-        <div class="col-md-6">
+        <h3>Epost</h3>
+        <div>
           <div class="relative">
             <input
               id="mail"
@@ -111,18 +100,12 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-6">
-          <button type="submit" id="buy">Kjøp biletter</button>
-        </div>
-
-        <div class="col-md-6">
-          <h3 id="output"></h3>
-        </div>
-      </div>
-      <div class="row">
+      <div class="d-flex">
+        <button type="submit" id="buy">Kjøp biletter</button>
         <button type="reset" id="delete">Slett alle biletter</button>
       </div>
+      <div class="row"></div>
+      <h3 id="output"></h3>
     </form>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/app.js"></script>

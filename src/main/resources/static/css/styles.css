@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #282828;
+  background: #282828 !important;
   min-height: 100vh;
 }
 
@@ -33,37 +33,30 @@ h3 {
 
 .relative {
   position: relative;
-  width: 100%;
-}
-
-.container {
-  width: 70%;
-  margin: 0 auto;
+  width: auto;
 }
 
 .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
   padding: 2rem;
 }
 
 .row select {
   padding: 1rem;
-  width: 300px;
+  width: 400px;
   outline: none;
 }
 
 .row select ~ .border {
+  border: none !important;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0;
   height: 3px;
-  background-color: #23d997;
+  background-color: #23d997 !important;
 }
 
 .row select:hover ~ .border {
@@ -74,21 +67,22 @@ h3 {
 
 .row input {
   padding: 1rem;
-  width: 300px;
+  width: 400px;
   outline: none;
 }
 
 .row input.small {
-  width: 50px;
+  width: 80px;
 }
 
 .row input ~ .border {
+  border: none !important;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0;
   height: 3px;
-  background-color: #23d997;
+  background-color: #23d997 !important;
 }
 
 .row input:hover ~ .border {
@@ -97,7 +91,23 @@ h3 {
   transition: 0.3s;
 }
 
-.row button {
+.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.d-flex button {
   padding: 1rem;
   margin: 0rem 1rem;
   border: 1px solid transparent;
@@ -109,18 +119,8 @@ h3 {
   outline: none;
 }
 
-.row button:hover {
+.d-flex button:hover {
   border: 1px solid #23d997;
   background: transparent;
-}
-
-.column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 /*# sourceMappingURL=styles.css.map */
