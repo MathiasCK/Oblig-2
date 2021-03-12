@@ -6,8 +6,7 @@ Studentnr: S354411
 
 GitHub: Mathiasck
 
-Url: https://github.com/MathiasCK/oblig-2.git
+Url Til Heroku: https://kinobiletter.herokuapp.com/
 
-Url til Vercel: https://kinobiletter.vercel.app/
 
 Fullt navn: Mathias Kolberg
