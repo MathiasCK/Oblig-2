@@ -44,6 +44,9 @@ h3 {
   -webkit-box-pack: justify !important;
       -ms-flex-pack: justify !important;
           justify-content: space-between !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 2rem;
 }
 
