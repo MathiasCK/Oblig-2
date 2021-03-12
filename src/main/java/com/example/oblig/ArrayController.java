@@ -13,18 +13,19 @@ public class ArrayController {
     
     private final List<Ticket> movieList = new ArrayList<>();
 
-    @PostMapping("/save")
+    @PostMapping("save")
     public void getResult(Ticket inputMovie) {
         movieList.add(inputMovie);
+
     }
 
 
-    @GetMapping("/tickets")
+    @GetMapping("tickets")
     public List<Ticket> getAll(){
         return movieList;
     }
 
-    @GetMapping("/delete")
+    @GetMapping("delete")
     public void delete() {
         movieList.clear();
     }
